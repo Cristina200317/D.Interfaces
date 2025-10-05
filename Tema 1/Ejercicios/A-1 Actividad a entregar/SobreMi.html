@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: white;
+        }
+
+        .header-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #d8d4c9;
+            padding: 30px;
+            box-sizing: border-box;
+            border: 5px solid #ffa500;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 12px;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+            background-color: #ffa500;
+        }
+
+        /*SOBRE MÍ lo resaltamos*/
+        .nav-item.active {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Resalte extra */
+            border-bottom: 3px solid #cc8400; /* Borde más oscuro */
+        }
+        
+        .section-container {
+            padding: 20px 0;
+        }
+
+        .section-container h2 {
+            font-size: 1.8em;
+            color: #333;
+            border-bottom: 2px solid #ffa500;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .content-area-sobre-mi {
+            display: flex;
+            gap: 40px;
+        }
+
+        .text-content {
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .image-container-sobre-mi {
+            flex-shrink: 0; /* Evita que la imagen se reduzca */
+            max-width: 300px;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .image-container-sobre-mi img {
+            width: 100%;
+        }
+
+        /* para móviles */
+        @media (max-width: 768px) {
+            .header-container {
+                margin: 20px;
+                padding: 20px 10px;
+            }
+
+            .nav-menu {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .content-area-sobre-mi {
+                flex-direction: column-reverse; /* Pone la imagen debajo del texto en móvil */
+                gap: 20px;
+            }
+
+            .image-container-sobre-mi {
+                width: 70%;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            
+            .text-content {
+                font-size: 0.9em;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-container">
+
+        <div class="nav-menu">
+            <a href="Portada.html" class="nav-item">PERFIL</a>
+            <a href="SobreMi.html" class="nav-item active">SOBRE MÍ</a> 
+            <a href="Experiencia.html" class="nav-item">EXPERIENCIA PROFESIONAL</a>
+            <a href="FormacionAcademica.html" class="nav-item">FORMACIÓN ACADÉMICA</a>
+            <a href="OtrosDatos.html" class="nav-item">OTROS DATOS</a>
+        </div>
+
+        <div class="section-container">
+            <h2>SOBRE MÍ</h2>
+
+            <div class="content-area-sobre-mi">
+
+                <div class="text-content">
+                    Soy una profesional en formación con experiencia en informática y socorrismo, combinando competencias técnicas y habilidades de atención al público. Poseo un Grado Medio en Sistemas Microinformáticos y Redes (SMR) y actualmente estoy cursando un Grado Superior en Desarrollo de Aplicaciones Web (DAW), con conocimientos en ciberseguridad, AWS y desarrollo de páginas web.
+                    <br><br>
+                    Además, cuento con amplia experiencia como socorrista, certificada en primeros auxilios y salvamento acuático, habiendo trabajado en distintos entornos, incluyendo actividades adaptadas para personas con discapacidad.
+                    <br><br>
+                    Destaco por mi responsabilidad, capacidad de trabajo en equipo y orientación al aprendizaje, así como por mi disponibilidad para trabajar en distintos horarios, incluyendo fines de semana y festivos. También poseo carné de conducir tipo B, lo que me permite movilidad para distintos entornos laborales.
+                </div>
+                
+                <div class="image-container-sobre-mi">
+                    <img src="SobreMi.jpg" alt="Ilustración de Cristina Corral Fernández">
+                    </div>
+
+            </div>
+        </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Otros Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* Contenedor principal: OTROS DATOS */
+        .header-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #f0f0f0;
+            padding: 30px;
+            box-sizing: border-box;
+            border: 5px solid #ffa500;
+            color: #4a4a4a;
+        }
+
+        /*Menú*/
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 12px;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            background-color: #ffa500;
+        }
+
+        /* OTROS DATOS resaltado */
+        .nav-item.active {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            border-bottom: 3px solid #cc8400;
+        }
+
+        .section-container {
+            padding: 30px 0;
+        }
+
+        .data-columns {
+            display: flex;
+            gap: 20px;
+            padding-top: 10px;
+        }
+
+        /* Estilos para cada columna */
+        .column-entry {
+            flex: 1;
+            padding: 0 10px;
+            border-right: 1px dashed #ddd;
+        }
+
+        /* Quita el borde derecho de la última columna */
+        .column-entry:last-child {
+            border-right: none;
+        }
+
+        /* Estilos para la imagen --- */
+        .icon-container {
+            margin-bottom: 10px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Tamaño de la imagen dentro del contenedor */
+        .icon-container img {
+            width: 45px;
+            height: auto;
+            display: block;
+        }
+
+        /* Título de la sección */
+        .column-entry h3 {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Estilo del texto */
+        .content-text {
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Listas de Aptitudes y Aficiones */
+        .content-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .content-list li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        /* Viñetas personalizadas */
+        .content-list li::before {
+            content: '•';
+            color: #555;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Separador de Aptitudes */
+        .aptitudes-subtitle {
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+
+        /* Para tablet y móvil */
+        @media (max-width: 900px) {
+            .data-columns {
+                flex-wrap: wrap;
+            }
+
+            .column-entry {
+                flex: 1 1 45%;
+                border-right: none;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed #ddd;
+            }
+
+            .column-entry:nth-child(2n) {
+                border-right: none;
+            }
+
+            .column-entry:nth-child(3),
+            .column-entry:nth-child(4) {
+                border-bottom: none;
+            }
+
+            .column-entry:nth-child(odd) {
+                border-right: 1px dashed #ddd;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .header-container {
+                margin: 20px;
+                padding: 20px 10px;
+            }
+
+            .nav-menu {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .data-columns {
+                flex-direction: column;
+            }
+
+            .column-entry {
+                flex: 1 1 100%;
+                border-right: none;
+                border-bottom: 1px dashed #ddd;
+            }
+
+            .column-entry:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-container">
+
+        <div class="nav-menu">
+            <a href="Portada.html" class="nav-item">PERFIL</a>
+            <a href="SobreMi.html" class="nav-item">SOBRE MÍ</a>
+            <a href="Experiencia.html" class="nav-item">EXPERIENCIA PROFESIONAL</a>
+            <a href="FormacionAcademica.html" class="nav-item">FORMACIÓN ACADÉMICA</a>
+            <a href="OtrosDatos.html" class="nav-item active">OTROS DATOS</a>
+        </div>
+
+        <div class="section-container">
+
+            <div class="data-columns">
+
+                <div class="column-entry">
+                    <div class="icon-container">
+                        <img src="objetivo.jpg" alt="Icono Objetivo">
+                    </div>
+                    <h3>OBJETIVO</h3>
+                    <p class="content-text">
+                        Mi objetivo profesional es adquirir experiencia laboral en una empresa que me permita crecer
+                        tanto personal como profesionalmente contribuyendo al mismo tiempo al logro de los objetivos del
+                        equipo y de la organización.
+                    </p>
+                </div>
+
+                <div class="column-entry">
+                    <div class="icon-container">
+                        <img src="aptitud.jpg" alt="Icono Aptitudes">
+                    </div>
+                    <h3>APTITUDES</h3>
+
+                    <p class="aptitudes-subtitle">Personales:</p>
+                    <ul class="content-list">
+                        <li>Capacidad de iniciativa</li>
+                        <li>Adaptabilidad </li>
+                        <li> Trabajo en equipo</li>
+                        <li>Creatividad </li>
+                        <li>Compromiso</li>
+                        <li>Organización </li>
+                        <li>Seriedad</li>
+                    </ul>
+
+                    <p class="aptitudes-subtitle">Técnicas:</p>
+                    <ul class="content-list">
+                        <li>Conocimientos en sistemas operativos </li>
+                        <li>Virtualización de sistemas como VMware y VirtualBox </li>
+                        <li>Desarrollo de aplicaciones web utilizando HTML, CSS, Bootstrap y WordPress</li>
+                        <li>Manejo de bases de datos (MySQL) </li>
+                        <li>Control de versiones GitHub</li>
+                        <li>Calculadora de AWS </li>
+                        <li>Fundamentos de la computación en la nube</li>
+                        <li>Seguridad en AWS</li>
+                        <li>Almacenamiento en la nube</li>
+                    </ul>
+                </div>
+
+                <div class="column-entry">
+                    <div class="icon-container">
+                        <img src="adicional.jpg" alt="Icono Adicional">
+                    </div>
+                    <h3>ADICIONAL</h3>
+                    <ul class="content-list">
+                        <li>Carné de conducir tipo B.</li>
+                        <li>Disponibilidad completa para trabajar fines de semana y festivos.</li>
+                        <li>Buena capacidad de trabajo en equipo.</li>
+                        <li>Formación en primeros auxilios y salvamento acuático.</li>
+                    </ul>
+                </div>
+
+                <div class="column-entry">
+                    <div class="icon-container">
+                        <img src="aficiones.jpg" alt="Icono Aficiones">
+                    </div>
+                    <h3>AFICIONES</h3>
+                    <ul class="content-list">
+                        <li>Viajar</li>
+                        <li>Ir al cine</li>
+                        <li>Natación</li>
+                        <li>Fotografía</li>
+                        <li>Escuchar música</li>
+                        <li>Juegos de mesa</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

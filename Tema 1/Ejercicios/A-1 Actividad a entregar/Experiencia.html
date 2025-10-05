@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia Profesional</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: white;
+        }
+
+        /* Contenedor principal: EXPERIENCIA */
+        .header-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #f7b731;
+            padding: 30px;
+            box-sizing: border-box;
+            border: 5px solid #ffa500;
+            color: black;
+        }
+
+        /*Menú*/
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 12px;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+            background-color: #ffa500;
+        }
+
+        /* EXPERIENCIA PROFESIONAL resaltado */
+        .nav-item.active {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            border-bottom: 3px solid #cc8400;
+        }
+
+        .section-container {
+            padding: 20px 0;
+        }
+
+        /* Título Experiencia Profesional */
+        .section-container h2 {
+            font-size: 1.8em;
+            color: black;
+            padding: 8px 15px;
+            margin-bottom: 30px;
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        /* Las dos columnas de experiencia */
+        .experience-columns {
+            display: flex;
+            gap: 40px;
+            padding-top: 20px;
+        }
+
+        /* Cada columna ocupa la mitad del espacio */
+        .column {
+            flex: 1;
+        }
+
+        /* Estilos para el título de cada sección */
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        /* Estilos para la empresa y fechas */
+        .job-details {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        /* Estilos para los puntos de las funciones */
+        .job-details ul {
+            margin: 5px 0 20px 20px;
+            padding: 0;
+            font-size: 0.9em;
+        }
+
+        /* Para móviles */
+        @media (max-width: 768px) {
+            .header-container {
+                margin: 20px;
+                padding: 20px 10px;
+            }
+
+            .nav-menu {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .experience-columns {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .section-container h2 {
+                font-size: 1.5em;
+                display: block;
+                text-align: center;
+            }
+
+            .job-details ul {
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-container">
+
+        <div class="nav-menu">
+            <a href="Portada.html" class="nav-item">PERFIL</a>
+            <a href="SobreMi.html" class="nav-item">SOBRE MÍ</a>
+            <a href="Experiencia.html" class="nav-item active">EXPERIENCIA PROFESIONAL</a>
+            <a href="FormacionAcademica.html" class="nav-item">FORMACIÓN ACADÉMICA</a>
+            <a href="OtrosDatos.html" class="nav-item">OTROS DATOS</a>
+        </div>
+
+        <div class="section-container">
+            <h2>EXPERIENCIA PROFESIONAL</h2>
+
+            <div class="experience-columns">
+
+                <div class="column">
+
+                    <div class="job-entry">
+                        <div class="job-title">SOCORRISTA</div>
+                        <div class="job-details">
+                            Empresa ACUASOS — Junio - Septiembre 2022
+                            <ul>
+                                <li>Desempeño como socorrista durante la temporada de verano.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job-entry">
+                        <div class="job-title">PRÁCTICAS DE INFORMÁTICA</div>
+                        <div class="job-details">
+                            Ibérica Multimedia — 2022
+                            <ul>
+                                <li>Prácticas de 3 meses en el área de informática, apoyo técnico, mantenimiento de
+                                    sistemas y desarrollo de página web.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="column">
+
+                    <div class="job-entry">
+                        <div class="job-title">SOCORRISTA</div>
+                        <div class="job-details">
+                            Polideportivo El Torreón.
+                            <ul>
+                                <li>4 y 5 de abril de 2023</li>
+                                <li>6 de mayo - 17 de junio de 2023</li>
+                                <li>14 - 16 de abril de 2025</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="job-entry">
+                        <div class="job-title">SOCORRISTA</div>
+                        <div class="job-details">
+                            Espacio para el Ocio Pozuelo — 28 - 31 de julio de 2025
+                            <ul>
+                                <li>Actividad dirigida a personas con discapacidad a partir de 4 años.</li>
+                                <li>Supervisión y asistencia en actividades acuáticas adaptadas.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

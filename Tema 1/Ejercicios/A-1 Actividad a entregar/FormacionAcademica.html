@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Formación Académica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #4a4a4a;
+        }
+
+        .header-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 5px solid #ffa500; 
+        }
+
+        /* Menú */
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 12px;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+            background-color: #ffa500;
+        }
+
+        /* Resaltar FORMACIÓN ACADÉMICA */
+        .nav-item.active {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            border-bottom: 3px solid #cc8400;
+        }
+
+        /* Contenido de la Formación Académica */
+        .section-title-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .section-title {
+            display: inline-block;
+            background-color: #ffa500;
+            color: black;
+            font-size: 1.8em;
+            font-weight: bold;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+        }
+
+        .formation-columns {
+            display: flex;
+            gap: 40px;
+            padding: 20px 0;
+        }
+
+        /* Estilos para las columnas */
+        .column {
+            flex: 1;
+        }
+
+        /* Estilos para formación */
+        .entry {
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .entry h4 {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: black;
+            margin: 0;
+        }
+
+        .entry p {
+            font-size: 0.95em;
+            color: #555;
+            margin: 5px 0 0 0;
+        }
+
+        /* Contacto */
+        .footer-contact {
+            background-color: #ffa500;
+            color: white;
+            padding: 10px 0;
+            margin: 60px -25px -25px -25px; 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-item.phone::before { content: '📞'; }
+        .contact-item.address::before { content: '📍'; }
+        .contact-item.email::before { content: '✉️'; }
+
+        @media (max-width: 768px) {
+            .formation-columns {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            .entry {
+                margin-bottom: 20px;
+            }
+
+            .footer-contact {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-container">
+
+        <div class="nav-menu">
+            <a href="Portada.html" class="nav-item">PERFIL</a>
+            <a href="SobreMi.html" class="nav-item">SOBRE MÍ</a>
+            <a href="Experiencia.html" class="nav-item">EXPERIENCIA PROFESIONAL</a>
+            <a href="FormacionAcademica.html" class="nav-item active">FORMACIÓN ACADÉMICA</a>
+            <a href="OtrosDatos.html" class="nav-item">OTROS DATOS</a>
+        </div>
+
+        <div class="section-title-container">
+            <span class="section-title">FORMACIÓN ACADÉMICA</span>
+        </div>
+
+        <div class="formation-columns">
+
+            <div class="column">
+                <div class="entry">
+                    <h4>EDUCACIÓN SECUNDARIA OBLIGATORIA (ESO)</h4>
+                    <p>Ciudad de Jaén — 2014 – 2019</p>
+                </div>
+
+                <div class="entry">
+                    <h4>GRADO MEDIO EN SISTEMAS MICROINFORMÁTICOS Y REDES (SMR)</h4>
+                    <p>IES Villablanca — 2019 – 2022</p>
+                </div>
+
+                <div class="entry">
+                    <h4>CERTIFICADO CISCO NETWORKING ACADEMY</h4>
+                    <p>13/12/2020</p>
+                </div>
+
+                <div class="entry">
+                    <h4>CURSO DE NATACIÓN</h4>
+                    <p>CD Municipal Moscardó — 2008 – 2019</p>
+                </div>
+
+                <div class="entry">
+                    <h4>CURSO DE SALVAMENTO ACUÁTICO</h4>
+                    <p>Polideportivo Jesús Rollán — 2019 – 2020</p>
+                </div>
+
+                <div class="entry">
+                    <h4>CURSO DE CIBERSEGURIDAD</h4>
+                    <p>13/12/2020</p>
+                </div>
+
+            </div>
+
+            <div class="column">
+                <div class="entry">
+                    <h4>CURSO DE SOCORRISTA – EMPRESA ASDEVISA</h4>
+                    <p>Forus Caja Mágica — 2021</p>
+                </div>
+
+                <div class="entry">
+                    <h4>RENOVACIÓN DEL TÍTULO DE SOCORRISTA – EMPRESA ASDEVISA</h4>
+                    <p>Centro Deportivo Amorós — 2023</p>
+                </div>
+
+                <div class="entry">
+                    <h4>CERTIFICADO AWS ACADEMY CLOUD OPERATIONS</h4>
+                    <p>26/03/2025</p>
+                </div>
+
+                <div class="entry">
+                    <h4>CERTIFICADO AWS ACADEMY CLOUD FOUNDATIONS</h4>
+                    <p>26/04/2025</p>
+                </div>
+
+                <div class="entry">
+                    <h4>GRADO SUPERIOR EN DESARROLLO DE APLICACIONES WEB (DAW)</h4>
+                    <p>IES Francisco de Goya — En curso (2024 – 2026)</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div class="contact-item phone">
+                +34-91-1234-567
+            </div>
+            <div class="contact-item address">
+                Calle Cualquiera 123
+            </div>
+            <div class="contact-item email">
+                cristina.corral2@educa.madrid.org
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
